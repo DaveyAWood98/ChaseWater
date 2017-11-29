@@ -15,7 +15,24 @@
       <nav>
     <div class="nav-wrapper" style="background-color: grey">
       <a href="#" class="brand-logo">Chasewater</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="Eatery.html">Eatery</a></li>
+        <li class="active"><a href="innoCentre.html">Innovation Centre</a></li>
+        <li class="active"><a href="events.html">Events</a></li>
+        <li class="active"><a href="activites.html">Activities</a></li>
+                <li class="active"><a class="dropdown-button" data-activates="dropdown">History<i class="material-icons right">arrow_drop_down</i></a></li>
+                <ul id="dropdown" class="dropdown-content">
+                <li><a href="Mining.html">Mining Heritage</a></li>
+                <li class="divider"></li>
+                <li><a href="canals.html">Canals</a></li>
+                <li class="divider"></li>
+                <li><a href="Railway.html">Railway</a></li>
+                </ul>
+      </ul>
+        
+        <ul class="side-nav" id="mobile-demo">
         <li class="active"><a href="index.html">Home</a></li>
         <li class="active"><a href="Eatery.html">Eatery</a></li>
         <li class="active"><a href="innoCentre.html">Innovation Centre</a></li>
@@ -30,8 +47,9 @@
                 <li><a href="Railway.html">Railway</a></li>
                 </ul>
       </ul>
-    </div>
+    </div>        
   </nav>
+ </div>
       
       
       
@@ -105,7 +123,14 @@
             
     </div>
     </body>
-      
+          <!-- JS for side nav -->
+      <script>
+        $(document).ready(function(){
+            $('.button-collapse').sideNav({
+                draggable: true
+            ,});
+        });
+    </script>
       
          <!--footer-->
       <footer class="page-footer" style="background-color: grey">
